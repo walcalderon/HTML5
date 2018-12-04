@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <header>
+    <img src="imagenes/logo.svg" alt="Logo WACM" width="200px">
+    <h1>Hoja de Vida</h1>
+
+</header>
+<seccion>
+        <h2>Nombres: <em> Walter Alberto. </em> </h2>
+        <h2>Apellidos: <em> Calderon Madrid. </em> </h2>
+        <h3>Fecha y Lugar de Nacimiento: <em> 18-mar-1982 Apaneca, El Salvador.</em></h3>
+        </seccion>
+        <section>
+        <nav>
+                <a href="index.html">Inicio</a> | <a href="educacion.html">Educacion</a> | <a href="experiencia.html">Experiencia</a>
+        </nav>
+</section>
+<section>
+    <h2>Educación</h2>
+    <table border="1", cellpadding="10", cellspacing="0">
+        <thead>
+         <tr>
+             <th>Año</th>
+             <th>Institucion</th>
+             <th>Lugar</th>
+             <th>¿Culmino?</th>
+         </tr>   
+        </thead>
+        <tbody>
+            <tr>
+                <td>2016</td>
+                <td>USAID-MINED</td>
+                <td>Santa Tecla</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>Inst. Especializado de Educacion Superior</td>
+                <td>Santa Tecla</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <td>2006</td>
+                <td>Universidad de Sonsonte</td>
+                <td>Sonsonate</td>
+                <td>SI</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</section>
+<section>
+        <fieldset>
+                <h1>Agregar Estudios</h1>
+                <form action="">
+                    <label for="anio"> <strong> Año </strong></label>
+                    <select name="anio" id="anio">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <!-- Considero que seria mas practico usar un campo de type="numer" asi:
+                    <input type="number"  name="anio" min="2018" max="2999" value="2018" autofocus required>
+                    -->
+                   <br>
+                   <label for="inst"> <strong> Institución:</strong></label> 
+                   <input type="text" name="inst" required placeholder="Nombre de la Institucion">
+                   <br>
+                   <label for="lugar"> <strong> Lugar:</strong></label> 
+                   <input type="text" name="lugar" required placeholder="Escriba la Ciudad, Pais">
+                   <br>
+                   <input type="submit" value="enviar">
+                </form>
+        </fieldset>
+
+</section>
+<footer>
+        <p><strong>email:</strong>  wal.calderon@gmail.com <br>
+               <strong> Tel: </strong> (503) 79854879 <br>
+               <strong> Twitter: </strong> @WalterCalderon1 <br>
+        </p>
+    </footer>    
+</body>
+</html>
